@@ -1,0 +1,48 @@
+/* INDEX - MAIN - SERVICES */
+.services {
+  padding-top: 0;
+}
+
+.services__list {
+  display: flex;
+}
+
+.services__item {
+  width: calc((100% - 60px) / 3);
+}
+
+.services__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.services__title,
+.team__title,
+.clients__title {
+  margin-bottom: 50px;
+
+  color: var(--secondary-text);
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.services__thumb {
+  position: relative;
+}
+
+.services__name {
+  position: absolute;
+  bottom: 0;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  width: 100%;
+
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white-text);
+  background-color: rgba(47, 48, 58, 0.8);
+}

@@ -1,0 +1,232 @@
+/* INDEX - MAIN - MODAL */
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+
+  background-color: rgba(0, 0, 0, 0.2);
+  opacity: 1;
+
+  transition: opacity var(--speed) var(--duration);
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(0.9);
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 528px;
+  min-height: 581px;
+
+  padding: 40px;
+
+  background-color: var(--white-text);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform var(--speed) var(--duration);
+}
+
+.modal-close-btn {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  fill: #000000;
+  background-color: var(--white-text);
+  cursor: pointer;
+
+  transition: fill var(--speed) var(--duration), box-shadow var(--speed) var(--duration);
+}
+
+.modal-close-btn:hover,
+.modal-close-btn:focus {
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+  fill: var(--accent);
+}
+
+/* INDEX - MAIN - MODAL - FORM */
+.order-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.order-title {
+  margin-bottom: 12px;
+
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text);
+}
+
+.order-form-list .item:not(:last-child) {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.order-form-list .order-field-label {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+
+  color: var(--main-text);
+}
+
+.order-field-input {
+  padding-left: 35px; /* need to confirm this padding - it is not specified in the instructions */
+  padding-right: 15px;
+
+  height: 40px;
+  width: 100%;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  color: var(--secondary-text); /* need to confirm this padding - it is not specified in the instructions */
+  outline: none;
+
+  transition: border-color var(--speed) var(--duration);
+}
+
+.order-field-input.textarea {
+  height: 120px;
+  padding: 12px;
+  resize: none;
+}
+
+.order-field-input:focus {
+  border: 1px solid var(--accent);
+}
+
+.order-field-input:focus + .order-field-icon {
+  fill: var(--accent);
+}
+
+.order-field-cont {
+  position: relative;
+  margin-top: 4px;
+}
+
+.order-field-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: fill var(--speed) var(--duration);
+}
+
+.order-field .textarea::placeholder {
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.order-agreement {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  margin-left: 12px;
+
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.order-agreement-label {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.order-agreement-link .link {
+  color: var(--accent);
+  text-decoration: underline;
+
+  transition: text-decoration var(--speed) var(--duration);
+}
+
+.order-agreement-link .link:hover {
+  text-decoration-color: transparent;
+}
+
+.order-icon-frame {
+  margin-right: 7px;
+  opacity: 1;
+
+  transition: fill var(--speed) var(--duration), box-shadow var(--speed) var(--duration), opacity var(--speed) var(--duration);
+}
+
+.order-checkbox:hover + .order-icon-frame {
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.15);
+}
+
+.order-checkbox:focus + .order-icon-frame {
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+  fill: var(--accent);
+}
+
+.order-icon-checked {
+  position: absolute;
+  margin-right: 7px;
+  opacity: 0;
+
+  transition: opacity var(--speed) var(--duration);
+}
+
+.order-checkbox:checked + .order-icon-frame {
+  opacity: 0;
+}
+
+.order-checkbox:checked ~ .order-icon-checked {
+  opacity: 1;
+}
+
+.order-btn {
+  width: 200px;
+  height: 50px;
+  left: 700px;
+  top: 712px;
+  display: block;
+  align-self: center;
+
+  background-color: var(--accent);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  color: var(--white-text);
+
+  transition: background-color var(--speed) var(--duration);
+}
+
+.order-btn:hover,
+.order-btn:focus {
+  background-color: #188ce8;
+}

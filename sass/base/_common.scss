@@ -1,0 +1,67 @@
+html {
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding-left: 0;
+}
+
+.page {
+  background-color: #ffffff;
+  color: var(--main-text);
+  font-family: 'Roboto', 'Helvetica Neue', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.list,
+.values__list {
+  list-style: none;
+}
+
+.container,
+.header__container--alignment,
+.hero__container--alignment,
+.values__container--alignment,
+.services__container--alignment {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+.section,
+.values--alignment,
+.services--alignment {
+  padding-top: var(--section-typ-padding);
+  padding-bottom: var(--section-typ-padding);
+}
