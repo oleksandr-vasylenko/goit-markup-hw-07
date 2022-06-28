@@ -21,8 +21,9 @@
     <title>WebStudio</title>
   </head>
   <body class="page">
+    <!-- HEADER -->
     <header class="header">
-      <div class="container">
+      <div class="header__container header__container--alignment">
         <a href="./index.html" lang="en" class="header-logo link"><span class="logo-blue">Web</span>Studio</a>
         <nav class="header-nav">
           <ul class="header-nav-list list">
@@ -59,84 +60,87 @@
     </header>
 
     <main>
-      <!-- Hero -->
-
+      <!-- HERO -->
       <section class="hero">
-        <div class="container">
-          <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-          <button type="button" class="hero-button" data-modal-open>Заказать услугу</button>
+        <div class="hero__container .hero__container--alignment">
+          <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
+          <button type="button" class="hero__button" data-modal-open>Заказать услугу</button>
         </div>
       </section>
 
-      <!--Values-->
-      <section class="values section">
-        <div class="container">
-          <h2 class="visually-hidden">Ценности</h2>
-          <!--title to be hidden-->
-          <ul class="values-list list">
-            <li class="values-list-item">
-              <div class="values-block">
-                <svg class="values-list-icon" width="70" height="70">
+      <!--VALUES-->
+      <section class="values values--alignment">
+        <div class="values__container values__container--alignment">
+          <h2 class="values__title values__title--visually-hidden">Ценности<!--title to be hidden--></h2>
+          <ul class="values__list">
+            <li class="values__item">
+              <div class="values__block">
+                <svg class="values__icon" width="70" height="70">
                   <use href="./images/icons.svg#icon-antenna"></use>
                 </svg>
               </div>
-              <h3 class="val-headline">Внимание к деталям</h3>
-              <p class="val-descr">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
+              <h3 class="values__headline">Внимание к деталям</h3>
+              <p class="values__description">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
             </li>
-            <li class="values-list-item">
-              <div class="values-block">
-                <svg class="values-list-icon" width="70" height="70">
+            <li class="values__item">
+              <div class="values__block">
+                <svg class="values__icon" width="70" height="70">
                   <use href="./images/icons.svg#icon-clock"></use>
                 </svg>
               </div>
-              <h3 class="val-headline">Пунктуальность</h3>
-              <p class="val-descr">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
+              <h3 class="values__headline">Пунктуальность</h3>
+              <p class="values__description">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
             </li>
-            <li class="values-list-item">
-              <div class="values-block">
-                <svg class="values-list-icon" width="70" height="70">
+            <li class="values__item">
+              <div class="values__block">
+                <svg class="values__icon" width="70" height="70">
                   <use href="./images/icons.svg#icon-diagram"></use>
                 </svg>
               </div>
-              <h3 class="val-headline">Планирование</h3>
-              <p class="val-descr">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
+              <h3 class="values__headline">Планирование</h3>
+              <p class="values__description">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
             </li>
-            <li class="values-list-item">
-              <div class="values-block">
-                <svg class="values-list-icon" width="70" height="70">
+            <li class="values__item">
+              <div class="values__block">
+                <svg class="values__icon" width="70" height="70">
                   <use href="./images/icons.svg#icon-astronaut"></use>
                 </svg>
               </div>
-              <h3 class="val-headline">Современные технологии</h3>
-              <p class="val-descr">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
+              <h3 class="values__headline">Современные технологии</h3>
+              <p class="values__description">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
             </li>
           </ul>
+        </div>
+      </section>
 
-          <h2 class="services title">Чем мы занимаемся</h2>
-          <ul class="services-images list">
-            <li class="services-img-item">
-              <div class="services-thumb">
+      <!--SERVICES-->
+      <section class="services services--alignment">
+        <div class="services__container services__container--alignment">
+          <h2 class="services__title">Чем мы занимаемся</h2>
+          <ul class="services__list">
+            <li class="services__item">
+              <div class="services__thumb">
                 <img src="./images/services/first_service.jpg" alt="Планшет и клавиатура" width="370" />
-                <h3 class="service-descr">Десктопные приложения</h3>
+                <h3 class="services__name">Десктопные приложения</h3>
               </div>
             </li>
-            <li class="services-img-item">
-              <div class="services-thumb">
+            <li class="services__item">
+              <div class="services__thumb">
                 <img src="./images/services/third_service.jpg" alt="Цветовая схема на планшете" width="370" />
-                <h3 class="service-descr">Мобильные приложения</h3>
+                <h3 class="services__name">Мобильные приложения</h3>
               </div>
             </li>
-            <li class="services-img-item">
-              <div class="services-thumb">
+            <li class="services__item">
+              <div class="services__thumb">
                 <img src="./images/services/second_service.jpg" alt="Ноутбук и смартфон" width="370" />
-                <h3 class="service-descr">Дизайнерские решения</h3>
+                <h3 class="services__name">Дизайнерские решения</h3>
               </div>
             </li>
           </ul>
         </div>
       </section>
 
-      <!--Team-->
+      <!--TEAM-->
       <section class="team section">
         <div class="container">
           <h2 class="team-title title">Наша команда</h2>
