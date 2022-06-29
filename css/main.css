@@ -87,7 +87,7 @@ a {
   padding-bottom: var(--section-typ-padding);
 }
 
-.hero__button {
+.hero__btn {
   padding: 10px 32px 10px 32px;
   min-width: 200px;
   background-color: var(--accent);
@@ -107,7 +107,7 @@ a {
   transition: background-color var(--speed) var(--duration), box-shadow var(--speed) var(--duration);
   transition: background-color var(--speed) var(--duration), box-shadow var(--speed) var(--duration), -webkit-box-shadow var(--speed) var(--duration);
 }
-.hero__button:hover, .hero__button:focus {
+.hero__btn:hover, .hero__btn:focus {
   background-color: #188ce8;
 }
 
