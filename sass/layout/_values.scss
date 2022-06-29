@@ -1,14 +1,13 @@
-/* INDEX - MAIN - VALUES */
 .values__list {
   display: flex;
 }
 
 .values__item {
   width: calc((100% - 90px) / 4);
-}
 
-.values__item:not(:last-child) {
-  margin-right: 30px;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .values__block {

@@ -11,15 +11,15 @@
   opacity: 1;
 
   transition: opacity var(--speed) var(--duration);
-}
 
-.backdrop.is-hidden {
-  opacity: 0;
-  pointer-events: none;
-}
+  &.is-hidden {
+    opacity: 0;
+    pointer-events: none;
 
-.backdrop.is-hidden .modal {
-  transform: translate(-50%, -50%) scale(0.9);
+    .modal {
+      transform: translate(-50%, -50%) scale(0.9);
+    }
+  }
 }
 
 .modal {
@@ -56,12 +56,12 @@
   cursor: pointer;
 
   transition: fill var(--speed) var(--duration), box-shadow var(--speed) var(--duration);
-}
 
-.modal-close-btn:hover,
-.modal-close-btn:focus {
-  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
-  fill: var(--accent);
+  &:hover,
+  &:focus {
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+    fill: var(--accent);
+  }
 }
 
 /* INDEX - MAIN - MODAL - FORM */
@@ -106,20 +106,20 @@
   outline: none;
 
   transition: border-color var(--speed) var(--duration);
+
+  &:focus {
+    border: 1px solid var(--accent);
+  }
+
+  &:focus + .order-field-icon {
+    fill: var(--accent);
+  }
 }
 
 .order-field-input.textarea {
   height: 120px;
   padding: 12px;
   resize: none;
-}
-
-.order-field-input:focus {
-  border: 1px solid var(--accent);
-}
-
-.order-field-input:focus + .order-field-icon {
-  fill: var(--accent);
 }
 
 .order-field-cont {
@@ -165,10 +165,10 @@
   text-decoration: underline;
 
   transition: text-decoration var(--speed) var(--duration);
-}
 
-.order-agreement-link .link:hover {
-  text-decoration-color: transparent;
+  &:hover {
+    text-decoration-color: transparent;
+  }
 }
 
 .order-icon-frame {
@@ -176,15 +176,19 @@
   opacity: 1;
 
   transition: fill var(--speed) var(--duration), box-shadow var(--speed) var(--duration), opacity var(--speed) var(--duration);
-}
 
-.order-checkbox:hover + .order-icon-frame {
-  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.15);
-}
+  .order-checkbox:hover + & {
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.15);
+  }
 
-.order-checkbox:focus + .order-icon-frame {
-  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
-  fill: var(--accent);
+  .order-checkbox:focus + & {
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+    fill: var(--accent);
+  }
+
+  .order-checkbox:checked + & {
+    opacity: 0;
+  }
 }
 
 .order-icon-checked {
@@ -193,14 +197,10 @@
   opacity: 0;
 
   transition: opacity var(--speed) var(--duration);
-}
 
-.order-checkbox:checked + .order-icon-frame {
-  opacity: 0;
-}
-
-.order-checkbox:checked ~ .order-icon-checked {
-  opacity: 1;
+  .order-checkbox:checked ~ & {
+    opacity: 1;
+  }
 }
 
 .order-btn {
@@ -224,9 +224,9 @@
   color: var(--white-text);
 
   transition: background-color var(--speed) var(--duration);
-}
 
-.order-btn:hover,
-.order-btn:focus {
-  background-color: #188ce8;
+  &:hover,
+  &:focus {
+    background-color: #188ce8;
+  }
 }

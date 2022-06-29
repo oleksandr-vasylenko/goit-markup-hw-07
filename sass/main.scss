@@ -5,8 +5,10 @@
 @import './base/header';
 @import './base/footer';
 
+@import './components/modal';
+@import './components/titles';
+
 @import './layout/hero';
-@import './layout/modal';
 @import './layout/values';
 @import './layout/services';
 @import './layout/team';

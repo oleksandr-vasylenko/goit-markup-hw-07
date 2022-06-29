@@ -42,6 +42,10 @@
   letter-spacing: 0.03em;
 
   transition: color var(--speed) var(--duration);
+  &:hover,
+  &:focus {
+    color: var(--accent);
+  }
 }
 
 .footer-contacts {
@@ -50,13 +54,6 @@
 
 .footer-contacts .footer-contacts-item + .footer-contacts-item {
   margin-top: 9px;
-}
-
-.footer-mail:hover,
-.footer-tel:hover,
-.footer-mail:focus,
-.footer-tel:focus {
-  color: var(--accent);
 }
 
 .footer-contact-block {
@@ -87,10 +84,9 @@
 
 .footer-social-item {
   margin-right: 10px;
-}
-
-.footer-social-item:last-child {
-  margin-right: 0;
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .footer-social-link {
@@ -105,16 +101,16 @@
   background-color: rgba(255, 255, 255, 0.1);
 
   transition: background-color var(--speed) var(--duration);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent);
+    color: var(--white-text);
+  }
 }
 
 .footer-social-icon {
   fill: currentColor;
-}
-
-.footer-social-link:hover,
-.footer-social-link:focus {
-  background-color: var(--accent);
-  color: var(--white-text);
 }
 
 /* GENERAL - FOOTER - SUBSCRIPTION */
@@ -143,10 +139,10 @@
   outline: none;
 
   transition: border-color var(--speed) var(--duration);
-}
 
-.subscr-field:focus {
-  border-color: var(--accent);
+  &:focus {
+    border-color: var(--accent);
+  }
 }
 
 .subscr-btn {
@@ -170,11 +166,11 @@
   cursor: pointer;
 
   transition: background-color var(--speed) var(--duration), box-shadow var(--speed) var(--duration);
-}
 
-.subscr-btn:hover,
-.subscr-btn:focus {
-  background-color: #188ce8; /* need to confirm. not specified in the instr */
+  &:hover,
+  &:focus {
+    background-color: #188ce8; /* need to confirm. not specified in the instr */
+  }
 }
 
 .subscr-icon {

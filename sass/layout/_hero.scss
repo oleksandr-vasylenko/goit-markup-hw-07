@@ -1,4 +1,3 @@
-/* INDEX - MAIN - HERO */
 .hero {
   padding-top: 200px;
   padding-bottom: 200px;
@@ -46,9 +45,9 @@
   border: none;
 
   transition: background-color var(--speed) var(--duration), box-shadow var(--speed) var(--duration);
-}
 
-.hero__button:hover,
-.hero__button:focus {
-  background-color: #188ce8;
+  &:hover,
+  &:focus {
+    background-color: #188ce8;
+  }
 }
