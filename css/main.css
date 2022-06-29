@@ -87,6 +87,16 @@ a {
   padding-bottom: var(--section-typ-padding);
 }
 
+.logo {
+  display: inline-block;
+  color: var(--accent);
+  font-family: var(--logo-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+
 .services__title,
 .team__title,
 .clients__title {
@@ -457,16 +467,6 @@ a {
 
 .header__contact-list .header__contact-item + .header__contact-item {
   margin-left: 50px;
-}
-
-.logo {
-  display: inline-block;
-  color: var(--accent);
-  font-family: var(--logo-font);
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
 }
 
 .logo__text--black {
