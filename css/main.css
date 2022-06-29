@@ -302,7 +302,6 @@ a {
           align-items: baseline;
 }
 
-/* GENERAL - FOOTER - CONTACTS */
 .footer__contact-link {
   color: rgba(255, 255, 255, 0.6);
   font-style: normal;
@@ -329,7 +328,6 @@ a {
   margin-right: auto;
 }
 
-/* SUBSCRIPTION */
 .subscription {
   margin-left: 93px;
 }
@@ -362,7 +360,6 @@ a {
   border-color: var(--accent);
 }
 
-/* GENERAL */
 .header {
   border-bottom: 1px solid #ececec;
 }
@@ -376,7 +373,6 @@ a {
           align-items: center;
 }
 
-/* NAVIGATION */
 .navigation {
   margin-left: 93px;
 }
@@ -421,7 +417,6 @@ a {
   background: var(--accent);
 }
 
-/* GENERAL - HEADER - CONTACTS */
 .header__contact-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -470,7 +465,6 @@ a {
   color: var(--white-text);
 }
 
-/* INDEX - MAIN - MODAL */
 .backdrop {
   position: fixed;
   top: 0;
@@ -511,7 +505,6 @@ a {
   transition: transform var(--speed) var(--duration), -webkit-transform var(--speed) var(--duration);
 }
 
-/* INDEX - MAIN - MODAL - FORM */
 .order {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1019,7 +1012,7 @@ a {
   transition: transform var(--speed) var(--duration);
   transition: transform var(--speed) var(--duration), -webkit-transform var(--speed) var(--duration);
 }
-.portfolio-item .link:hover .projects__overlay, .portfolio-item .link:focus .projects__overlay {
+.projects__item .projects__link:hover .projects__overlay, .projects__item .projects__link:focus .projects__overlay {
   -webkit-transform: translateY(0);
           transform: translateY(0);
 }

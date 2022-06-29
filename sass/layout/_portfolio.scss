@@ -40,8 +40,8 @@
   transform: translateY(100%);
   transition: transform var(--speed) var(--duration);
 
-  .portfolio-item .link:hover &,
-  .portfolio-item .link:focus & {
+  .projects__item .projects__link:hover &,
+  .projects__item .projects__link:focus & {
     transform: translateY(0);
   }
 }
