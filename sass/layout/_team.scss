@@ -1,8 +1,12 @@
-.team-members {
+.team {
+  background-color: #f5f4fa;
+}
+
+.members {
   display: flex;
 }
 
-.team-member-item {
+.members__item {
   width: calc((100% - 90px) / 4);
   background-color: var(--white-text);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -13,12 +17,12 @@
   }
 }
 
-.team-member-item .team-member-info {
+.members__item .members__info {
   padding-top: 30px;
   padding-bottom: 30px;
 }
 
-.team-members-name {
+.members__name {
   margin-bottom: 10px;
 
   color: var(--secondary-text);
@@ -29,7 +33,7 @@
   letter-spacing: 0.03em;
 }
 
-.team-members-position {
+.members__position {
   margin-bottom: 16px;
 
   color: var(--main-text);
@@ -37,44 +41,4 @@
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
-}
-
-.team {
-  background-color: #f5f4fa;
-}
-
-.team-social-list {
-  display: flex;
-  justify-content: center;
-}
-
-.team-social-item {
-  margin-right: 10px;
-
-  &:last-child {
-    margin-right: 0;
-  }
-}
-
-.team-social-link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 44px;
-  height: 44px;
-
-  border-radius: 50%;
-  color: #afb1b8;
-
-  transition: background-color var(--speed) var(--duration), color var(--speed) var(--duration);
-
-  &:hover,
-  &:focus {
-    background-color: var(--accent);
-    color: var(--white-text);
-  }
-}
-
-.team-social-icon {
-  fill: currentColor;
 }

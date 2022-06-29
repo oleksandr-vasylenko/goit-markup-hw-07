@@ -50,59 +50,6 @@
   margin-right: auto;
 }
 
-/* SOCIAL */
-.join-social__title,
-.subscription__title {
-  display: block;
-  margin-bottom: 20px;
-
-  color: var(--white-text);
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-}
-
-.footer .container {
-  display: flex;
-}
-
-.join-social__list {
-  display: flex;
-  justify-content: center;
-}
-
-.join-social__item {
-  margin-right: 10px;
-  &:last-child {
-    margin-right: 0;
-  }
-}
-
-.join-social__link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 44px;
-  height: 44px;
-
-  border-radius: 50%;
-  color: var(--white-text);
-  background-color: rgba(255, 255, 255, 0.1);
-
-  transition: background-color var(--speed) var(--duration);
-
-  &:hover,
-  &:focus {
-    background-color: var(--accent);
-    color: var(--white-text);
-  }
-}
-
-.join-social__icon {
-  fill: currentColor;
-}
-
 /* SUBSCRIPTION */
 .subscription {
   margin-left: 93px;
