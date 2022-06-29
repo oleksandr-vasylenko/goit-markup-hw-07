@@ -426,71 +426,71 @@
     <!--MODAL-->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button class="modal-close-btn" data-modal-close>
-          <svg class="modal-close-icon" width="11" height="11">
+        <button class="close-btn" data-modal-close>
+          <svg class="close-btn__icon" width="11" height="11">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
 
-        <form class="order-form">
-          <b class="order-title">Оставьте свои данные, мы вам перезвоним</b>
-          <ul class="order-form-list list">
-            <li class="order-field item">
-              <label class="order-field-label" for="name">Имя</label>
-              <div class="order-field-cont">
-                <input class="order-field-input" type="text" name="name" id="name" autofocus />
-                <svg class="order-field-icon" width="18" height="18">
+        <form class="order">
+          <b class="order__title">Оставьте свои данные, мы вам перезвоним</b>
+          <ul class="order__list list">
+            <li class="order__field">
+              <label class="order__label" for="name">Имя</label>
+              <div class="order__block">
+                <input class="order__input" type="text" name="name" id="name" autofocus />
+                <svg class="order__icon" width="18" height="18">
                   <use href="./images/icons.svg#icon-name"></use>
                 </svg>
               </div>
             </li>
 
-            <li class="order-field item">
-              <label class="order-field-label" for="tel">Телефон</label>
-              <div class="order-field-cont">
-                <input class="order-field-input" type="tel" name="tel" id="tel" />
-                <svg class="order-field-icon" width="18" height="18">
+            <li class="order__field">
+              <label class="order__label" for="tel">Телефон</label>
+              <div class="order__block">
+                <input class="order__input" type="tel" name="tel" id="tel" />
+                <svg class="order__icon" width="18" height="18">
                   <use href="./images/icons.svg#icon-phone"></use>
                 </svg>
               </div>
             </li>
 
-            <li class="order-field item">
-              <label class="order-field-label" for="mail">Почта</label>
-              <div class="order-field-cont">
-                <input class="order-field-input" type="email" name="mail" id="mail" />
-                <svg class="order-field-icon" width="18" height="18">
+            <li class="order__field">
+              <label class="order__label" for="mail">Почта</label>
+              <div class="order__block">
+                <input class="order__input" type="email" name="mail" id="mail" />
+                <svg class="order__icon" width="18" height="18">
                   <use href="./images/icons.svg#icon-email"></use>
                 </svg>
               </div>
             </li>
 
-            <li class="order-field item">
-              <label class="order-field-label" for="comment">Комментарий</label>
-              <div class="order-field-cont">
-                <textarea class="order-field-input textarea" name="comment" id="comment" placeholder="Введите текст"></textarea>
+            <li class="order__field">
+              <label class="order__label" for="comment">Комментарий</label>
+              <div class="order__block">
+                <textarea class="order__input textarea" name="comment" id="comment" placeholder="Введите текст"></textarea>
               </div>
             </li>
           </ul>
 
-          <div class="order-agreement">
-            <label for="order-agreement-label" class="order-agreement-label">
-              <input type="checkbox" class="order-checkbox visually-hidden" id="order-agreement-label" />
+          <div class="order__agree">
+            <label for="order__agree-label" class="order__agree-label">
+              <input type="checkbox" class="order__checkbox visually-hidden" id="order__agree-label" />
 
-              <svg class="order-icon-frame" width="16" height="15">
+              <svg class="order__icon-frame" width="16" height="15">
                 <use href="./images/icons.svg#icon-check-frame"></use>
               </svg>
 
-              <svg class="order-icon-checked" width="16" height="15">
+              <svg class="order__icon-checked" width="16" height="15">
                 <use href="./images/icons.svg#icon-checked-box"></use>
               </svg>
               Соглашаюсь с рассылкой и принимаю&nbsp;
             </label>
-            <span class="order-agreement-link">
+            <span class="order__agree-link">
               <a class="link" href="">Условия договора</a>
             </span>
           </div>
-          <button type="submit" class="order-btn">Отправить</button>
+          <button type="submit" class="order__btn">Отправить</button>
         </form>
       </div>
     </div>

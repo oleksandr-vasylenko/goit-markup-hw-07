@@ -39,38 +39,13 @@
   transition: transform var(--speed) var(--duration);
 }
 
-.modal-close-btn {
-  position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  top: 8px;
-  right: 8px;
-  width: 30px;
-  height: 30px;
-
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 50%;
-  fill: #000000;
-  background-color: var(--white-text);
-  cursor: pointer;
-
-  transition: fill var(--speed) var(--duration), box-shadow var(--speed) var(--duration);
-
-  &:hover,
-  &:focus {
-    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
-    fill: var(--accent);
-  }
-}
-
 /* INDEX - MAIN - MODAL - FORM */
-.order-form {
+.order {
   display: flex;
   flex-direction: column;
 }
 
-.order-title {
+.order__title {
   margin-bottom: 12px;
 
   font-size: 20px;
@@ -80,13 +55,13 @@
   color: var(--secondary-text);
 }
 
-.order-form-list .item:not(:last-child) {
+.order__field:not(:last-child) {
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
 }
 
-.order-form-list .order-field-label {
+.order__label {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
@@ -94,7 +69,7 @@
   color: var(--main-text);
 }
 
-.order-field-input {
+.order__input {
   padding-left: 35px; /* need to confirm this padding - it is not specified in the instructions */
   padding-right: 15px;
 
@@ -111,23 +86,23 @@
     border: 1px solid var(--accent);
   }
 
-  &:focus + .order-field-icon {
+  &:focus + .order__icon {
     fill: var(--accent);
+  }
+
+  &.textarea {
+    height: 120px;
+    padding: 12px;
+    resize: none;
   }
 }
 
-.order-field-input.textarea {
-  height: 120px;
-  padding: 12px;
-  resize: none;
-}
-
-.order-field-cont {
+.order__block {
   position: relative;
   margin-top: 4px;
 }
 
-.order-field-icon {
+.order__icon {
   position: absolute;
   left: 12px;
   top: 50%;
@@ -135,14 +110,14 @@
   transition: fill var(--speed) var(--duration);
 }
 
-.order-field .textarea::placeholder {
+.order__field .textarea::placeholder {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
 
-.order-agreement {
+.order__agree {
   display: flex;
   align-items: center;
   margin-top: 20px;
@@ -154,13 +129,13 @@
   letter-spacing: 0.03em;
 }
 
-.order-agreement-label {
+.order__agree-label {
   position: relative;
   display: flex;
   align-items: center;
 }
 
-.order-agreement-link .link {
+.order__agree-link .link {
   color: var(--accent);
   text-decoration: underline;
 
@@ -171,62 +146,34 @@
   }
 }
 
-.order-icon-frame {
+.order__icon-frame {
   margin-right: 7px;
   opacity: 1;
 
   transition: fill var(--speed) var(--duration), box-shadow var(--speed) var(--duration), opacity var(--speed) var(--duration);
 
-  .order-checkbox:hover + & {
+  .order__checkbox:hover + & {
     box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.15);
   }
 
-  .order-checkbox:focus + & {
+  .order__checkbox:focus + & {
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
     fill: var(--accent);
   }
 
-  .order-checkbox:checked + & {
+  .order__checkbox:checked + & {
     opacity: 0;
   }
 }
 
-.order-icon-checked {
+.order__icon-checked {
   position: absolute;
   margin-right: 7px;
   opacity: 0;
 
   transition: opacity var(--speed) var(--duration);
 
-  .order-checkbox:checked ~ & {
+  .order__checkbox:checked ~ & {
     opacity: 1;
-  }
-}
-
-.order-btn {
-  width: 200px;
-  height: 50px;
-  left: 700px;
-  top: 712px;
-  display: block;
-  align-self: center;
-
-  background-color: var(--accent);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  border: none;
-  cursor: pointer;
-
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.06em;
-  color: var(--white-text);
-
-  transition: background-color var(--speed) var(--duration);
-
-  &:hover,
-  &:focus {
-    background-color: #188ce8;
   }
 }
