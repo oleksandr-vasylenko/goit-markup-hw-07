@@ -43,25 +43,18 @@ a {
   text-decoration: none;
 }
 
-.list,
-.values__list {
+.list {
   list-style: none;
 }
 
-.container,
-.header__container--alignment,
-.hero__container--alignment,
-.values__container--alignment,
-.services__container--alignment {
+.container {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
 }
 
-.section,
-.values--alignment,
-.services--alignment {
+.section {
   padding-top: var(--section-typ-padding);
   padding-bottom: var(--section-typ-padding);
 }

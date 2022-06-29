@@ -2,9 +2,10 @@
 @import './utils/hidden';
 
 @import './base/common';
-@import './base/header';
-@import './base/footer';
 
+@import './components/footer';
+@import './components/header';
+@import './components/logo';
 @import './components/modal';
 @import './components/titles';
 
