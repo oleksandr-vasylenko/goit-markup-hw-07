@@ -4,10 +4,10 @@
   justify-content: $main-axis;
 }
 
-@mixin logoColor($tex-color: var(--accent)) {
+@mixin logoColor($text-color: var(--accent)) {
   display: inline-block;
 
-  color: $tex-color;
+  color: $text-color;
   font-family: $fontLogo;
   font-weight: 700;
   font-size: 26px;
