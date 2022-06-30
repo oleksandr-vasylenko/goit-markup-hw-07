@@ -1,3 +1,8 @@
+.footer__container {
+  display: flex;
+  align-items: baseline;
+}
+
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -15,11 +20,6 @@
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-}
-
-.footer__container {
-  display: flex;
-  align-items: baseline;
 }
 
 .footer__contact-link {
