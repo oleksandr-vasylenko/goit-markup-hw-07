@@ -38,13 +38,12 @@
   transition: transform var(--speed) var(--duration);
 }
 
-
-.order {
+.modal__form {
   display: flex;
   flex-direction: column;
 }
 
-.order__title {
+.modal__title {
   margin-bottom: 12px;
 
   font-size: 20px;
@@ -54,13 +53,13 @@
   color: var(--secondary-text);
 }
 
-.order__field:not(:last-child) {
+.modal__field:not(:last-child) {
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
 }
 
-.order__label {
+.modal__label {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
@@ -68,7 +67,7 @@
   color: var(--main-text);
 }
 
-.order__input {
+.modal__input {
   padding-left: 35px; /* need to confirm this padding - it is not specified in the instructions */
   padding-right: 15px;
 
@@ -85,7 +84,7 @@
     border: 1px solid var(--accent);
   }
 
-  &:focus + .order__icon {
+  &:focus + .modal__icon {
     fill: var(--accent);
   }
 
@@ -96,12 +95,12 @@
   }
 }
 
-.order__block {
+.modal__block {
   position: relative;
   margin-top: 4px;
 }
 
-.order__icon {
+.modal__icon {
   position: absolute;
   left: 12px;
   top: 50%;
@@ -109,14 +108,14 @@
   transition: fill var(--speed) var(--duration);
 }
 
-.order__field .textarea::placeholder {
+.modal__field .textarea::placeholder {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
 
-.order__agree {
+.modal__agree {
   display: flex;
   align-items: center;
   margin-top: 20px;
@@ -128,13 +127,13 @@
   letter-spacing: 0.03em;
 }
 
-.order__agree-label {
+.modal__agree-label {
   position: relative;
   display: flex;
   align-items: center;
 }
 
-.order__agree-link .link {
+.modal__agree-link .link {
   color: var(--accent);
   text-decoration: underline;
 
@@ -145,34 +144,34 @@
   }
 }
 
-.order__icon-frame {
+.modal__icon-frame {
   margin-right: 7px;
   opacity: 1;
 
   transition: fill var(--speed) var(--duration), box-shadow var(--speed) var(--duration), opacity var(--speed) var(--duration);
 
-  .order__checkbox:hover + & {
+  .modal__checkbox:hover + & {
     box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.15);
   }
 
-  .order__checkbox:focus + & {
+  .modal__checkbox:focus + & {
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
     fill: var(--accent);
   }
 
-  .order__checkbox:checked + & {
+  .modal__checkbox:checked + & {
     opacity: 0;
   }
 }
 
-.order__icon-checked {
+.modal__icon-checked {
   position: absolute;
   margin-right: 7px;
   opacity: 0;
 
   transition: opacity var(--speed) var(--duration);
 
-  .order__checkbox:checked ~ & {
+  .modal__checkbox:checked ~ & {
     opacity: 1;
   }
 }

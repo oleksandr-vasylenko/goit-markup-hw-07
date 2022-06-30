@@ -250,7 +250,7 @@ a {
   fill: var(--accent);
 }
 
-.order__btn {
+.modal__btn {
   width: 200px;
   height: 50px;
   left: 700px;
@@ -272,7 +272,7 @@ a {
   -webkit-transition: background-color var(--speed) var(--duration);
   transition: background-color var(--speed) var(--duration);
 }
-.order__btn:hover, .order__btn:focus {
+.modal__btn:hover, .modal__btn:focus {
   background-color: #188ce8;
 }
 
@@ -461,7 +461,7 @@ a {
   transition: transform var(--speed) var(--duration), -webkit-transform var(--speed) var(--duration);
 }
 
-.order {
+.modal__form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -471,7 +471,7 @@ a {
           flex-direction: column;
 }
 
-.order__title {
+.modal__title {
   margin-bottom: 12px;
   font-size: 20px;
   line-height: 1.15;
@@ -480,7 +480,7 @@ a {
   color: var(--secondary-text);
 }
 
-.order__field:not(:last-child) {
+.modal__field:not(:last-child) {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -491,14 +491,14 @@ a {
   margin-bottom: 10px;
 }
 
-.order__label {
+.modal__label {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
   color: var(--main-text);
 }
 
-.order__input {
+.modal__input {
   padding-left: 35px;
   /* need to confirm this padding - it is not specified in the instructions */
   padding-right: 15px;
@@ -512,24 +512,24 @@ a {
   -webkit-transition: border-color var(--speed) var(--duration);
   transition: border-color var(--speed) var(--duration);
 }
-.order__input:focus {
+.modal__input:focus {
   border: 1px solid var(--accent);
 }
-.order__input:focus + .order__icon {
+.modal__input:focus + .modal__icon {
   fill: var(--accent);
 }
-.order__input.textarea {
+.modal__input.textarea {
   height: 120px;
   padding: 12px;
   resize: none;
 }
 
-.order__block {
+.modal__block {
   position: relative;
   margin-top: 4px;
 }
 
-.order__icon {
+.modal__icon {
   position: absolute;
   left: 12px;
   top: 50%;
@@ -539,42 +539,42 @@ a {
   transition: fill var(--speed) var(--duration);
 }
 
-.order__field .textarea::-webkit-input-placeholder {
+.modal__field .textarea::-webkit-input-placeholder {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
 
-.order__field .textarea::-moz-placeholder {
+.modal__field .textarea::-moz-placeholder {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
 
-.order__field .textarea:-ms-input-placeholder {
+.modal__field .textarea:-ms-input-placeholder {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
 
-.order__field .textarea::-ms-input-placeholder {
+.modal__field .textarea::-ms-input-placeholder {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
 
-.order__field .textarea::placeholder {
+.modal__field .textarea::placeholder {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
 
-.order__agree {
+.modal__agree {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -589,7 +589,7 @@ a {
   letter-spacing: 0.03em;
 }
 
-.order__agree-label {
+.modal__agree-label {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -599,7 +599,7 @@ a {
           align-items: center;
 }
 
-.order__agree-link .link {
+.modal__agree-link .link {
   color: var(--accent);
   text-decoration: underline;
   -webkit-transition: -webkit-text-decoration var(--speed) var(--duration);
@@ -607,12 +607,12 @@ a {
   transition: text-decoration var(--speed) var(--duration);
   transition: text-decoration var(--speed) var(--duration), -webkit-text-decoration var(--speed) var(--duration);
 }
-.order__agree-link .link:hover {
+.modal__agree-link .link:hover {
   -webkit-text-decoration-color: transparent;
           text-decoration-color: transparent;
 }
 
-.order__icon-frame {
+.modal__icon-frame {
   margin-right: 7px;
   opacity: 1;
   -webkit-transition: fill var(--speed) var(--duration), opacity var(--speed) var(--duration), -webkit-box-shadow var(--speed) var(--duration);
@@ -620,27 +620,27 @@ a {
   transition: fill var(--speed) var(--duration), box-shadow var(--speed) var(--duration), opacity var(--speed) var(--duration);
   transition: fill var(--speed) var(--duration), box-shadow var(--speed) var(--duration), opacity var(--speed) var(--duration), -webkit-box-shadow var(--speed) var(--duration);
 }
-.order__checkbox:hover + .order__icon-frame {
+.modal__checkbox:hover + .modal__icon-frame {
   -webkit-box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.15);
 }
-.order__checkbox:focus + .order__icon-frame {
+.modal__checkbox:focus + .modal__icon-frame {
   -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
   fill: var(--accent);
 }
-.order__checkbox:checked + .order__icon-frame {
+.modal__checkbox:checked + .modal__icon-frame {
   opacity: 0;
 }
 
-.order__icon-checked {
+.modal__icon-checked {
   position: absolute;
   margin-right: 7px;
   opacity: 0;
   -webkit-transition: opacity var(--speed) var(--duration);
   transition: opacity var(--speed) var(--duration);
 }
-.order__checkbox:checked ~ .order__icon-checked {
+.modal__checkbox:checked ~ .modal__icon-checked {
   opacity: 1;
 }
 
