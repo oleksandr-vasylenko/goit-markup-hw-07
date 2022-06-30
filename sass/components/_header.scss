@@ -6,39 +6,3 @@
   display: flex;
   align-items: center;
 }
-
-.header__contact-list {
-  display: flex;
-  align-items: center;
-  margin-left: auto;
-}
-
-.header__contact-link {
-  display: flex;
-  align-items: center;
-
-  padding-top: 32px;
-  padding-bottom: 32px;
-
-  color: var(--main-text);
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-
-  transition: color var(--speed) var(--duration);
-
-  &:hover,
-  &:focus {
-    color: var(--accent);
-  }
-}
-
-.header__contact-icon {
-  fill: currentColor;
-  margin-right: 10px;
-}
-
-.header__contact-list .header__contact-item + .header__contact-item {
-  margin-left: 50px;
-}

@@ -21,30 +21,3 @@
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
-
-.footer__contact-link {
-  color: rgba(255, 255, 255, 0.6);
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-
-  transition: color var(--speed) var(--duration);
-  &:hover,
-  &:focus {
-    color: var(--accent);
-  }
-}
-
-.footer__contact-list {
-  margin-top: 9px;
-}
-
-.footer__contact-list .footer__contact-item + .footer__contact-item {
-  margin-top: 9px;
-}
-
-.footer__contacts {
-  margin-right: auto;
-}
