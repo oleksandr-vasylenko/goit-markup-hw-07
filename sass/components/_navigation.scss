@@ -29,7 +29,7 @@
     color: var(--accent);
   }
 
-  &.current {
+  &--current {
     color: var(--accent);
 
     &::after {

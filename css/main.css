@@ -665,10 +665,10 @@ a {
 .navigation__link:hover, .navigation__link:focus {
   color: var(--accent);
 }
-.navigation__link.current {
+.navigation__link--current {
   color: var(--accent);
 }
-.navigation__link.current::after {
+.navigation__link--current::after {
   content: "";
   position: absolute;
   left: 0;
