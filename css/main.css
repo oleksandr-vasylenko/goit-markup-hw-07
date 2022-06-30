@@ -3,7 +3,6 @@
   --white-text: #ffffff;
   --secondary-text: #212121;
   --accent: #2196f3;
-  --logo-font: "Raleway", sans-serif;
   --section-typ-padding: 94px;
   --duration: cubic-bezier(0.4, 0, 0.2, 1);
   --speed: 250ms;
@@ -61,7 +60,7 @@ ul {
 .page {
   background-color: #ffffff;
   color: var(--main-text);
-  font-family: "Roboto", "Helvetica Neue", sans-serif;
+  font-family: Roboto, Helvetica Neue, sans-serif;
 }
 
 a {
@@ -83,7 +82,7 @@ a {
 .logo {
   display: inline-block;
   color: var(--accent);
-  font-family: var(--logo-font);
+  font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;

@@ -33,7 +33,7 @@ ul {
 .page {
   background-color: #ffffff;
   color: var(--main-text);
-  font-family: 'Roboto', 'Helvetica Neue', sans-serif;
+  font-family: $fontPrimary;
 }
 
 a {
