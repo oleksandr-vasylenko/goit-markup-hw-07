@@ -24,6 +24,32 @@
   overflow: hidden;
 }
 
+.services__title,
+.team__title,
+.clients__title {
+  margin-bottom: 50px;
+  color: var(--secondary-text);
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.join-social__link, .member-social__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -78,42 +104,6 @@ a {
 .section {
   padding-top: var(--section-typ-padding);
   padding-bottom: var(--section-typ-padding);
-}
-
-.logo {
-  display: inline-block;
-  color: var(--accent);
-  font-family: Raleway, sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-}
-
-.services__title,
-.team__title,
-.clients__title {
-  margin-bottom: 50px;
-  color: var(--secondary-text);
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  letter-spacing: 0.03em;
-}
-
-.join-social__link, .member-social__link {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
 }
 
 .hero__btn {
@@ -183,12 +173,12 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 200px;
   height: 50px;
   background: var(--accent);
@@ -457,12 +447,34 @@ a {
   margin-left: 50px;
 }
 
+.logo {
+  display: inline-block;
+  color: var(--accent);
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+
 .logo__text--black {
+  display: inline-block;
   color: var(--secondary-text);
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
 }
 
 .logo__text--white {
+  display: inline-block;
   color: var(--white-text);
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
 }
 
 .backdrop {

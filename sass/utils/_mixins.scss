@@ -1,5 +1,16 @@
-@mixin flexCenter($type: flex, $main-axis: center, $cross-axis: center) {
+@mixin flexCenter($type: flex, $cross-axis: center, $main-axis: center) {
   display: $type;
-  justify-content: $main-axis;
   align-items: $cross-axis;
+  justify-content: $main-axis;
+}
+
+@mixin logoColor($tex-color: var(--accent)) {
+  display: inline-block;
+
+  color: $tex-color;
+  font-family: $fontLogo;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
 }

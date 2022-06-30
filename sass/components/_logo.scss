@@ -1,11 +1,11 @@
 .logo {
-  @extend %logo;
+  @include logoColor();
 }
 
 .logo__text--black {
-  color: var(--secondary-text);
+  @include logoColor(var(--secondary-text));
 }
 
 .logo__text--white {
-  color: var(--white-text);
+  @include logoColor(var(--white-text));
 }

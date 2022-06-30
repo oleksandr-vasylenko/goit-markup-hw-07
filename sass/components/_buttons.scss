@@ -58,9 +58,7 @@
 }
 
 .subscription__btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flexCenter;
   width: 200px;
   height: 50px;
 
@@ -92,9 +90,7 @@
 
 .close-btn {
   position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include flexCenter;
   top: 8px;
   right: 8px;
   width: 30px;
