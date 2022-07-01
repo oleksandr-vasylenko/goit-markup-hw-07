@@ -116,8 +116,7 @@
 }
 
 .modal__agree {
-  display: flex;
-  align-items: center;
+  @include flexCenter(flex, center, null);
   margin-top: 20px;
   margin-bottom: 30px;
   margin-left: 12px;
@@ -129,8 +128,7 @@
 
 .modal__agree-label {
   position: relative;
-  display: flex;
-  align-items: center;
+  @include flexCenter(flex, center, null);
 }
 
 .modal__agree-link .link {

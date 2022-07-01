@@ -1,6 +1,5 @@
 .footer__container {
-  display: flex;
-  align-items: baseline;
+  @include flexCenter(flex, baseline, null);
 }
 
 .footer {

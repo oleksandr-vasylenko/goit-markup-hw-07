@@ -20,9 +20,7 @@
 }
 
 %social {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include flexCenter();
   width: 44px;
   height: 44px;
 
