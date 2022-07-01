@@ -1,10 +1,10 @@
-.contact__list {
+.header__contacts {
   display: flex;
   align-items: center;
   margin-left: auto;
 }
 
-.contact__link {
+.contacts__link {
   display: flex;
   align-items: center;
 
@@ -25,31 +25,31 @@
   }
 }
 
-.contact__icon {
+.contacts__icon {
   fill: currentColor;
   margin-right: 10px;
 }
 
-.contact__list .contact__item + .contact__item {
+.contacts .contacts__item + .contacts__item {
   margin-left: 50px;
 }
 
-.footer__contacts {
+.footer__connect {
   margin-right: auto;
 }
 
-.contact__list--footer {
+.footer__contacts {
   margin-top: 9px;
   align-items: flex-start;
   flex-direction: column;
 }
 
-.contact__list--footer .contact__item--footer + .contact__item--footer {
+.footer__contacts .contacts__item--footer + .contacts__item--footer {
   margin-left: 0;
   margin-top: 9px;
 }
 
-.contact__link--footer {
+.contacts__link--footer {
   padding: 0;
   color: rgba(255, 255, 255, 0.6);
   font-style: normal;
